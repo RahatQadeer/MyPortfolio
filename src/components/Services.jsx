@@ -3,9 +3,9 @@ import { Code, Smartphone, PenTool, Database } from "lucide-react";
 const services = [
   {
     title: "Full-Stack Development",
-    icon: <Code className="w-8 h-8 text-orange-500" />,
+    icon: <Code className="w-8 h-8 text-orange-500 " />,
     description:
-      "Building responsive MERN stack web applications with clean APIs and scalable architecture.",
+      "Building responsive full-stack web applications with clean APIs and scalable architecture.",
   },
   {
     title: "Mobile App Development",

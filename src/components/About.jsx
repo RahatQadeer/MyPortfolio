@@ -25,16 +25,17 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold">
               About <span className="text-orange-400">Me</span>
             </h2>
-            <p className="text-gray-300 leading-relaxed font-normal text-base">
-              I'm Rahat Qadeer, a final-year Software Engineering student at
-              Riphah International University, passionate about creating
-              innovative and user-focused digital solutions. I specialize in
-              full-stack development using the MERN stack and React Native for
-              high-performance, cross-platform mobile apps. I thrive on
-              transforming complex challenges into elegant, scalable solutions
-              while consistently expanding my tech skillset. Currently open to
-              internships and junior developer roles where I can grow and
-              contribute to real-world projects.
+            <p className="text-gray-300 leading-relaxed font-normal text-base text-justify">
+              I’m Rahat Qadeer, a Software Engineer with a strong focus on
+              full-stack development and cross-platform mobile applications. I
+              work with modern JavaScript ecosystems to design and build
+              scalable, performant, and user-focused digital products. My
+              strengths include backend API development, database design across
+              SQL and NoSQL systems, and building clean, responsive interfaces.
+              I value code quality, system scalability, and thoughtful
+              problem-solving in every project I take on. I’m open to full-stack
+              roles where I can contribute to impactful products while
+              continuously strengthening my technical and architectural skills.
             </p>
 
             <div className="grid grid-cols-2 gap-6">

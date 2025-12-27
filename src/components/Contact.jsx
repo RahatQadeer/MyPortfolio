@@ -16,8 +16,29 @@ const Contact = () => {
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
+  // Strict email validation function
+  const isValidEmail = (email) => {
+    // basic format check
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    if (!emailPattern.test(email)) return false;
+
+    // reject common disposable/fake email patterns (optional)
+    const fakeDomains = ["mailinator.com", "tempmail.com", "10minutemail.com"];
+    const domain = email.split("@")[1].toLowerCase();
+    if (fakeDomains.includes(domain)) return false;
+
+    return true;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Validate email before sending
+    if (!isValidEmail(formData.from_email)) {
+      toast.error(" Please enter a valid and real email!");
+      return;
+    }
+
     emailjs
       .sendForm(
         "service_tb7c8xs",
@@ -27,7 +48,7 @@ const Contact = () => {
       )
       .then(() => {
         toast.success(
-          "🎉 Thank you for your message! I'll get back to you soon."
+          " Thank you for your message! I'll get back to you soon."
         );
 
         setFormData({
@@ -38,7 +59,7 @@ const Contact = () => {
         });
       })
       .catch(() => {
-        toast.error("❌ Failed to send message.");
+        toast.error(" Failed to send message.");
       });
   };
 
@@ -54,8 +75,7 @@ const Contact = () => {
             Contact <span className="text-orange-400">With Me</span>
           </h2>
           <p className="text-gray-400 mt-2 max-w-xl mx-auto text-xl">
-            Feel free to directly contact with me, via Linkedin or email follow
-            or hit me up on LinkedIn.
+            Feel free to directly contact me via LinkedIn or email.
           </p>
         </div>
 

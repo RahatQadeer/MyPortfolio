@@ -2,12 +2,21 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "Riphah Rozee Pro",
+    description:
+      "An ongoing full-stack web application modernizing Riphah’s recruitment and candidate tracking.",
+    image: "/images/riphah1.jpg",
+    tech: ["React.js", "Node.js", "Express.js", "PostgreSQL", "DevOps (CI/CD)"],
+    link: "Currently working on this project",
+    status: "Currently working on this project",
+  },
+  {
     title: "E‑commerce Web App",
     description:
       "Full‑stack MERN application with user authentication, payment integration, and admin dashboard",
     image:
       "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop", // ✅ Updated image URL
-    tech: ["React", "Node.js", "MongoDB", "Express"],
+    tech: ["React.js", "Node.js", "MongoDB", "Express.js"],
     link: "https://github.com/RahatQadeer/Ecommerce-MERN-stack-project",
   },
   {
@@ -16,7 +25,7 @@ const projects = [
       "Cross‑platform mobile app built with React Native for real‑time inventory tracking",
     image:
       "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop", // replace with your image URL
-    tech: ["React Native", "Firebase", "Redux"],
+    tech: ["React Native", "Firebase"],
     link: "https://github.com/RahatQadeer/Inventory-Management-React-native-app",
   },
   {

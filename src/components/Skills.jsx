@@ -3,27 +3,35 @@ import React from "react";
 const skillsData = [
   {
     title: "Programming Languages",
-    items: ["C++", "Java", "JavaScript", "Python", "PHP", "HTML", "CSS"],
+    items: ["C++", "Java", "JavaScript", "Python"],
   },
   {
     title: "Frontend",
-    items: ["React.js", "React Native", "TailwindCSS", "Next.js"],
+    items: ["HTML5", "CSS3", "React Native", "TailwindCSS", "React.js"],
   },
   {
     title: "Backend",
-    items: ["Node.js", "Express.js", "REST APIs", "Authentication"],
+    items: ["Node.js", "Express.js","REST API Development"],
   },
   {
     title: "Databases",
-    items: ["MongoDB", "Firebase", "MySQL"],
+    items: ["MongoDB", "PostgreSQL", "MySQL"],
   },
   {
     title: "Design Tools",
-    items: ["Figma", "Photoshop", "Illustrator"],
+    items: ["Figma", "Photoshop"],
   },
   {
     title: "Dev Tools",
-    items: ["Git", "GitHub", "VS Code", "Postman"],
+    items: ["Git", "GitHub"],
+  },
+  {
+    title: "DevOps",
+    items: ["CI/CD Pipeline", "GitHub Actions", "Basic Deployment Concepts"],
+  },
+  {
+    title: "Project Management",
+    items: ["ClickUp"],
   },
 ];
 
@@ -49,7 +57,6 @@ const Skills = () => {
                 {category.items.map((item, i) => (
                   <span
                     key={i}
-                    // className="bg-orange-900 text-white text-sm px-3 py-1 rounded-full"
                     className="bg-[#47352b] text-[#f3a57e] text-xs px-3 py-1 rounded-full"
 
                   >
